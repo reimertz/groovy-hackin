@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>groovy hackin'</title>
+</head>
+<style type="text/css">
+  body {
+
+    margin: 10% auto;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    line-height: 50px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: white;
+  }
+</style>
+
+<body>
+<section>
+  <h1>groovy hackin'</h1>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <br>
+  <audio autoplay preload loop>
+    <source src="song.mp3" type="audio/mpeg" >
+  </audio>
+  <img src="hacker.gif">
+</section>
+
+<section>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+  <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+</section>
+
+<section>
+  <a href="http://github.com/reimertz/groovy-hackin">source code</a>
+</section>
+
+
+
+<script type="text/javascript">
+  var colors = ["#242424", "black", "#341010","#103410","#101034"];
+  var fonts = ["sans", "monospace", "sans-serif","fantasy"];
+
+  setInterval(function(){
+    document.body.style.background = colors.pop();
+    document.body.style.fontFamily = fonts.pop();
+    colors.unshift(document.body.style.background);
+    fonts.unshift(document.body.style.fontFamily);
+  }, 400);
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</body>
+</html>
